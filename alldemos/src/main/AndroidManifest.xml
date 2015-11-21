@@ -31,6 +31,8 @@
         <activity android:name=".Activity8" />
         <activity android:name=".Activity9" />
         <activity android:name=".Activity10" />
+        <activity android:name=".Activity11" />
+        <activity android:name=".Activity12" />
 
         <provider
             android:exported="true"

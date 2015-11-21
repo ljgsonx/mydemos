@@ -20,9 +20,11 @@ public class MainActivity extends AppCompatActivity {
             "Create and Read File",
             "Create and Read SdCard File",
             "Create and Read Xml File",
-            "sharedPreferences test",
+            "SharedPreferences test",
             "SQLite Test",
-            "ContentProvider Test"
+            "ContentProvider Test",
+            "ExpendableListView Test",
+            "GridView Test"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +69,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 9:
                         startActivity(new Intent(MainActivity.this, Activity10.class));
+                        break;
+                    case 10:
+                        startActivity(new Intent(MainActivity.this, Activity11.class));
+                        break;
+                    case 11:
+                        startActivity(new Intent(MainActivity.this, Activity12.class));
                         break;
                     default:
                         break;
