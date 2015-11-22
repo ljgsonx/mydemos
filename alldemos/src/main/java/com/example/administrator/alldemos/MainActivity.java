@@ -15,6 +15,7 @@ import com.example.administrator.alldemos.activities.Activity12;
 import com.example.administrator.alldemos.activities.Activity13;
 import com.example.administrator.alldemos.activities.Activity14;
 import com.example.administrator.alldemos.activities.Activity15;
+import com.example.administrator.alldemos.activities.Activity16;
 import com.example.administrator.alldemos.activities.Activity2;
 import com.example.administrator.alldemos.activities.Activity3;
 import com.example.administrator.alldemos.activities.Activity4;
@@ -42,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
             "GridView Test",
             "DrawerLayout Test",
             "DrawerLayout + ActionBar",
-            "FragmentTabHost Test"
+            "FragmentTabHost Test",
+            "Dialog Test"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +104,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 14:
                         startActivity(new Intent(MainActivity.this, Activity15.class));
+                        break;
+                    case 15:
+                        startActivity(new Intent(MainActivity.this, Activity16.class));
                         break;
                     default:
                         break;

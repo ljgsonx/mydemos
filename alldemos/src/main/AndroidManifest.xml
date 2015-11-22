@@ -35,6 +35,7 @@
         <activity android:name=".activities.Activity13" />
         <activity android:name=".activities.Activity14" android:parentActivityName=".MainActivity"/>
         <activity android:name=".activities.Activity15" />
+        <activity android:name=".activities.Activity16" />
 
         <provider
             android:exported="true"
