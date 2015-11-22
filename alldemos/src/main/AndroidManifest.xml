@@ -13,11 +13,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -33,6 +32,9 @@
         <activity android:name=".Activity10" />
         <activity android:name=".Activity11" />
         <activity android:name=".Activity12" />
+        <activity android:name=".Activity13" />
+        <activity android:name=".Activity14" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Activity15" />
 
         <provider
             android:exported="true"

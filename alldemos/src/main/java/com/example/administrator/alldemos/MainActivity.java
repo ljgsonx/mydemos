@@ -3,6 +3,7 @@ package com.example.administrator.alldemos;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
             "SQLite Test",
             "ContentProvider Test",
             "ExpendableListView Test",
-            "GridView Test"
+            "GridView Test",
+            "DrawerLayout Test",
+            "DrawerLayout + ActionBar",
+            "FragmentTabHost Test"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +79,15 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 11:
                         startActivity(new Intent(MainActivity.this, Activity12.class));
+                        break;
+                    case 12:
+                        startActivity(new Intent(MainActivity.this, Activity13.class));
+                        break;
+                    case 13:
+                        startActivity(new Intent(MainActivity.this, Activity14.class));
+                        break;
+                    case 14:
+                        startActivity(new Intent(MainActivity.this, Activity15.class));
                         break;
                     default:
                         break;
