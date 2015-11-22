@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.example.administrator.alldemos.R;
+import com.example.administrator.alldemos.beans.DataEntity;
 
 import java.util.List;
 

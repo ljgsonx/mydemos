@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -8,6 +8,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
+
+import com.example.administrator.alldemos.fragments.FragmentPage1;
+import com.example.administrator.alldemos.fragments.FragmentPage2;
+import com.example.administrator.alldemos.fragments.FragmentPage3;
+import com.example.administrator.alldemos.fragments.FragmentPage4;
+import com.example.administrator.alldemos.fragments.FragmentPage5;
+import com.example.administrator.alldemos.R;
 
 /**
  * Created by ljgsonx on 2015/11/22.

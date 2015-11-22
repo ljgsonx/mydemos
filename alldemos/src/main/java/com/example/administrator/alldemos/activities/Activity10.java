@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -14,6 +14,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+
+import com.example.administrator.alldemos.R;
 
 /**
  * ---------------------------------------------------

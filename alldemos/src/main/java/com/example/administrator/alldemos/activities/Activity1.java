@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.app.ActionBar;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.SimpleAdapter;
+
+import com.example.administrator.alldemos.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

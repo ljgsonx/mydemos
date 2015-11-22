@@ -1,7 +1,9 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.utils;
 
 import android.content.Context;
 import android.database.Cursor;
+
+import com.example.administrator.alldemos.beans.User;
 
 import java.util.List;
 

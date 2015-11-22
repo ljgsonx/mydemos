@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.app.LoaderManager;
 import android.content.CursorLoader;
@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+
+import com.example.administrator.alldemos.R;
 
 /**
  * ---------------------------------------------------

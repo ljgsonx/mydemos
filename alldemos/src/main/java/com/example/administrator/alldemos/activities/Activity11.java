@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.app.ExpandableListActivity;
 import android.database.Cursor;

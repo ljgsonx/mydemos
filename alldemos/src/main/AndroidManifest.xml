@@ -20,27 +20,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity1" />
-        <activity android:name=".Activity2" />
-        <activity android:name=".Activity3" />
-        <activity android:name=".Activity4" />
-        <activity android:name=".Activity5" />
-        <activity android:name=".Activity6" />
-        <activity android:name=".Activity7" />
-        <activity android:name=".Activity8" />
-        <activity android:name=".Activity9" />
-        <activity android:name=".Activity10" />
-        <activity android:name=".Activity11" />
-        <activity android:name=".Activity12" />
-        <activity android:name=".Activity13" />
-        <activity android:name=".Activity14" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Activity15" />
+        <activity android:name=".activities.Activity1" />
+        <activity android:name=".activities.Activity2" />
+        <activity android:name=".activities.Activity3" />
+        <activity android:name=".activities.Activity4" />
+        <activity android:name=".activities.Activity5" />
+        <activity android:name=".activities.Activity6" />
+        <activity android:name=".activities.Activity7" />
+        <activity android:name=".activities.Activity8" />
+        <activity android:name=".activities.Activity9" />
+        <activity android:name=".activities.Activity10" />
+        <activity android:name=".activities.Activity11" />
+        <activity android:name=".activities.Activity12" />
+        <activity android:name=".activities.Activity13" />
+        <activity android:name=".activities.Activity14" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".activities.Activity15" />
 
         <provider
             android:exported="true"
             android:permission="com.example.administrator.alldemos.userprovider.AGREE"
             android:authorities="com.example.administrator.alldemos.userprovider"
-            android:name=".UserProvider"/>
+            android:name=".utils.UserProvider"/>
     </application>
 
 </manifest>

@@ -1,8 +1,12 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+
+import com.example.administrator.alldemos.beans.DataEntity;
+import com.example.administrator.alldemos.utils.MyBaseAdapter;
+import com.example.administrator.alldemos.R;
 
 import java.util.ArrayList;
 import java.util.List;

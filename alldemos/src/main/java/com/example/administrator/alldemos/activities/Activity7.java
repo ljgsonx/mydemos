@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.administrator.alldemos.beans.DataEntity;
+import com.example.administrator.alldemos.utils.PullXmlUtil;
 
 import java.io.BufferedWriter;
 import java.io.FileInputStream;

@@ -1,9 +1,11 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
+
+import com.example.administrator.alldemos.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

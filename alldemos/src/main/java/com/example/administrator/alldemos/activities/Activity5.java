@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.app.ActionBar;
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.administrator.alldemos.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;

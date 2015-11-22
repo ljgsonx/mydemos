@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.utils;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;

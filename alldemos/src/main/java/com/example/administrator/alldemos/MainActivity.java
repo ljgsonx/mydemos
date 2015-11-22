@@ -3,12 +3,26 @@ package com.example.administrator.alldemos;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.administrator.alldemos.activities.Activity1;
+import com.example.administrator.alldemos.activities.Activity10;
+import com.example.administrator.alldemos.activities.Activity11;
+import com.example.administrator.alldemos.activities.Activity12;
+import com.example.administrator.alldemos.activities.Activity13;
+import com.example.administrator.alldemos.activities.Activity14;
+import com.example.administrator.alldemos.activities.Activity15;
+import com.example.administrator.alldemos.activities.Activity2;
+import com.example.administrator.alldemos.activities.Activity3;
+import com.example.administrator.alldemos.activities.Activity4;
+import com.example.administrator.alldemos.activities.Activity5;
+import com.example.administrator.alldemos.activities.Activity6;
+import com.example.administrator.alldemos.activities.Activity7;
+import com.example.administrator.alldemos.activities.Activity8;
+import com.example.administrator.alldemos.activities.Activity9;
 
 public class MainActivity extends AppCompatActivity {
 

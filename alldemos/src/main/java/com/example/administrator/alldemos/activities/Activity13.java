@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+
+import com.example.administrator.alldemos.R;
 
 /**
  * Created by ljgsonx on 2015/11/22.

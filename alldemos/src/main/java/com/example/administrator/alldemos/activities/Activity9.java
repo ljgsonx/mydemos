@@ -1,4 +1,4 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,10 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+
+import com.example.administrator.alldemos.R;
+import com.example.administrator.alldemos.beans.User;
+import com.example.administrator.alldemos.utils.UserService;
 
 import java.util.ArrayList;
 import java.util.HashMap;

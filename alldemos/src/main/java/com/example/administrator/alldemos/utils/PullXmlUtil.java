@@ -1,6 +1,8 @@
-package com.example.administrator.alldemos;
+package com.example.administrator.alldemos.utils;
 
 import android.util.Xml;
+
+import com.example.administrator.alldemos.beans.DataEntity;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlSerializer;
