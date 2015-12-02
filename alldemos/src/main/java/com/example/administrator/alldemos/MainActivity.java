@@ -17,6 +17,7 @@ import com.example.administrator.alldemos.activities.Activity14;
 import com.example.administrator.alldemos.activities.Activity15;
 import com.example.administrator.alldemos.activities.Activity16;
 import com.example.administrator.alldemos.activities.Activity17;
+import com.example.administrator.alldemos.activities.Activity18;
 import com.example.administrator.alldemos.activities.Activity2;
 import com.example.administrator.alldemos.activities.Activity3;
 import com.example.administrator.alldemos.activities.Activity4;
@@ -30,23 +31,24 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView listView;
     private String[] demos=new String[]{
-            "ListView by SimpleActivity",
-            "ListView by BaseActivity",
-            "ListView by SimpleCursorAdapter",
-            "Spinner Test",
-            "Create and Read File",
-            "Create and Read SdCard File",
-            "Create and Read Xml File",
-            "SharedPreferences test",
-            "SQLite Test",
-            "ContentProvider Test",
-            "ExpendableListView Test",
-            "GridView Test",
-            "DrawerLayout Test",
-            "DrawerLayout + ActionBar",
-            "FragmentTabHost Test",
-            "Dialog Test",
-            "ContextMenu Test"
+            "1.ListView by SimpleActivity",
+            "2.ListView by BaseActivity",
+            "3.ListView by SimpleCursorAdapter",
+            "4.Spinner Test",
+            "5.Create and Read File",
+            "6.Create and Read SdCard File",
+            "7.Create and Read Xml File",
+            "8.SharedPreferences test",
+            "9.SQLite Test",
+            "10.ContentProvider Test",
+            "11.ExpendableListView Test",
+            "12.GridView Test",
+            "13.DrawerLayout Test",
+            "14.DrawerLayout + ActionBar",
+            "15.FragmentTabHost Test",
+            "16.Dialog Test",
+            "17.ContextMenu Test",
+            "18.Handler Test"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,6 +114,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 16:
                         startActivity(new Intent(MainActivity.this, Activity17.class));
+                        break;
+                    case 17:
+                        startActivity(new Intent(MainActivity.this, Activity18.class));
                         break;
                     default:
                         break;
