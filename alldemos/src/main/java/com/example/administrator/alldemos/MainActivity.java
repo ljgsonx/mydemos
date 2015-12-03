@@ -18,6 +18,7 @@ import com.example.administrator.alldemos.activities.Activity15;
 import com.example.administrator.alldemos.activities.Activity16;
 import com.example.administrator.alldemos.activities.Activity17;
 import com.example.administrator.alldemos.activities.Activity18;
+import com.example.administrator.alldemos.activities.Activity19;
 import com.example.administrator.alldemos.activities.Activity2;
 import com.example.administrator.alldemos.activities.Activity3;
 import com.example.administrator.alldemos.activities.Activity4;
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
             "15.FragmentTabHost Test",
             "16.Dialog Test",
             "17.ContextMenu Test",
-            "18.Handler Test"
+            "18.Handler Test",
+            "19.ShortCut Test"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +119,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 17:
                         startActivity(new Intent(MainActivity.this, Activity18.class));
+                        break;
+                    case 18:
+                        startActivity(new Intent(MainActivity.this, Activity19.class));
                         break;
                     default:
                         break;
