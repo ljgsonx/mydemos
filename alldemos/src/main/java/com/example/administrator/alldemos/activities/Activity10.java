@@ -43,6 +43,7 @@ public class Activity10 extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity9_layout);
         init();
 
+
     }
 
     private void init() {
@@ -78,6 +79,7 @@ public class Activity10 extends AppCompatActivity implements View.OnClickListene
     public void updateListView(){
         Uri selectAllUri= Uri.parse("content://com.example.administrator.alldemos.userprovider/user");
         Cursor cursor =  this.getBaseContext().getContentResolver().query(selectAllUri, null, null, null, "_id desc");
+        startManagingCursor(cursor);
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(
                 this,
                 R.layout.activity9_listview_layout,
