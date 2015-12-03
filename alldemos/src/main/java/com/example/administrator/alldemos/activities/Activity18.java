@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,10 @@ public class Activity18 extends AppCompatActivity {
     private TextView mTextView;
     private Handler mHandler =new MyHandler();
     private Button mButton;
+    //为了能够正常及时退出新线程,设置线程运行状态
+    private Boolean mStopThread = false;
+    //同步锁
+    private byte[] mLock = new byte[0];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,16 +55,8 @@ public class Activity18 extends AppCompatActivity {
                 new Thread() {
                     @Override
                     public void run() {
-                        for (int i = 0; i < 20; i++) {
-                            try {
-                                Thread.sleep(1000);
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
-                            Message _msg = new Message();
-                            _msg.what = MSG_ACTION_UPDATE;
-                            _msg.obj = i;
-                            mHandler.sendMessage(_msg);
+                        synchronized (mLock){
+                            sendHandlerMsg();
                         }
                     }
                 }.start();
@@ -72,6 +69,24 @@ public class Activity18 extends AppCompatActivity {
         setContentView(_linearLayout);
     }
 
+    public void sendHandlerMsg(){
+        for (int i = 0; i < 20; i++) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            Message _msg = mHandler.obtainMessage();
+            _msg.what = MSG_ACTION_UPDATE;
+            _msg.obj = i;
+            mHandler.sendMessage(_msg);
+            Log.i("------>", mStopThread+"");
+            if(mStopThread){
+                return;
+            }
+        }
+    }
+
     class MyHandler extends Handler{
         @Override
         public void handleMessage(Message msg) {
@@ -80,5 +95,13 @@ public class Activity18 extends AppCompatActivity {
             }
             super.handleMessage(msg);
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+
+        mStopThread = true;
+        super.onDestroy();
+
     }
 }
