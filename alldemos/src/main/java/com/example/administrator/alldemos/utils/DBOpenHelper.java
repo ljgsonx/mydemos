@@ -28,6 +28,12 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         System.out.println("onUpgrade");
         db.execSQL("DROP TABLE IF EXISTS USER");
         onCreate(db);
+        //可以支持版本回滚
+        if(oldVersion == 1 && newVersion == 2){
+            //create a new table...
+        }else if(newVersion == 2 && oldVersion == 1){
+            //drop the new table...
+        }
     }
 
     @Override
