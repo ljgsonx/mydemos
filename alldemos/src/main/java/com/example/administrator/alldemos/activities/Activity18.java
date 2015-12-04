@@ -29,8 +29,6 @@ public class Activity18 extends AppCompatActivity {
     private Button mButton;
     //为了能够正常及时退出新线程,设置线程运行状态
     private Boolean mStopThread = false;
-    //同步锁
-    private byte[] mLock = new byte[0];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +53,8 @@ public class Activity18 extends AppCompatActivity {
                 new Thread() {
                     @Override
                     public void run() {
-                        synchronized (mLock){
+                        //注意:不能将Activity上下文作为同步锁;否则被锁住后,主线程将不能及时介入,操作主线程将出现卡住的情况
+                        synchronized (mTextView){
                             sendHandlerMsg();
                         }
                     }

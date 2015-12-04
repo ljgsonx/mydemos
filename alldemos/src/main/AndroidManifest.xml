@@ -46,6 +46,7 @@
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.Activity20" />
 
         <provider
             android:exported="true"
