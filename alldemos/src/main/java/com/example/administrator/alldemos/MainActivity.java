@@ -21,6 +21,7 @@ import com.example.administrator.alldemos.activities.Activity18;
 import com.example.administrator.alldemos.activities.Activity19;
 import com.example.administrator.alldemos.activities.Activity2;
 import com.example.administrator.alldemos.activities.Activity20;
+import com.example.administrator.alldemos.activities.Activity21;
 import com.example.administrator.alldemos.activities.Activity3;
 import com.example.administrator.alldemos.activities.Activity4;
 import com.example.administrator.alldemos.activities.Activity5;
@@ -52,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
             "17.ContextMenu Test",
             "18.Handler Test",
             "19.ShortCut Test",
-            "20.LoaderManager Test"
+            "20.LoaderManager Test",
+            "21.Self-Loader Test"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +129,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 19:
                         startActivity(new Intent(MainActivity.this, Activity20.class));
+                        break;
+                    case 20:
+                        startActivity(new Intent(MainActivity.this, Activity21.class));
                         break;
                     default:
                         break;

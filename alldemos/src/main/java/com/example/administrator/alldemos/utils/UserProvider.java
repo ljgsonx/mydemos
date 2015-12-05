@@ -3,7 +3,10 @@ package com.example.administrator.alldemos.utils;
 import android.content.ContentProvider;
 import android.content.ContentUris;
 import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
 import android.content.UriMatcher;
+import android.content.pm.ProviderInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
@@ -24,6 +27,8 @@ public class UserProvider extends ContentProvider {
     public static final String USER_ITEM_TYPE = "com.example.administrator.alldemos.item/user";
 
     public static final String AUTHORITY = "com.example.administrator.alldemos.userprovider";
+
+    public static final String DATA_CHANGE_ACTION = "com.example.alldemos.userdata_change";
 
     public static final int USERS = 1;
     public static final int USER = 2;
@@ -47,6 +52,7 @@ public class UserProvider extends ContentProvider {
     @Nullable
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
+
         SQLiteDatabase db = dbOpenHelper.getReadableDatabase();
         switch (uriMatcher.match(uri)) {
             case USERS:
@@ -77,6 +83,10 @@ public class UserProvider extends ContentProvider {
     @Nullable
     @Override
     public Uri insert(Uri uri, ContentValues values) {
+
+        //发送广播,通知观察者数据已改变
+        getContext().sendBroadcast(new Intent(MyLoaderObserver.ACTION_USER_DATACHANGE));
+
         SQLiteDatabase db = dbOpenHelper.getWritableDatabase();
         long id = 0;
         switch (uriMatcher.match(uri)) {

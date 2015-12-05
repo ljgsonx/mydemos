@@ -47,12 +47,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.Activity20" />
+        <activity android:name=".activities.Activity21" android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <provider
             android:exported="true"
             android:permission="com.example.administrator.alldemos.userprovider.AGREE"
             android:authorities="com.example.administrator.alldemos.userprovider"
             android:name=".utils.UserProvider"/>
+
     </application>
 
 </manifest>

@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 /**
  * ---------------------------------------------------
- * Description:Handler测试类
+ * Description:Handler与多线程消息发送 测试类
  * Author: ljgsonx
  * Belong to: com.example.administrator.alldemos.activities
  * Time: 2015/12/2 18:09
