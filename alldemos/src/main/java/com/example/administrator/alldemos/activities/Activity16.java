@@ -11,7 +11,12 @@ import android.widget.LinearLayout;
 import com.example.administrator.alldemos.R;
 
 /**
- * Created by ljgsonx on 2015/11/22.
+ *---------------------------------------------------
+ * Description: dialog Test
+ * Author: ljgsonx
+ * Belong to: com.example.administrator.alldemos.activities
+ * Time: 2015/12/7 9:46
+ *---------------------------------------------------
  */
 public class Activity16 extends AppCompatActivity {
     @Override

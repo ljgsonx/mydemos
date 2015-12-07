@@ -23,7 +23,12 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 /**
- * Created by ljgsonx on 2015/11/22.
+ *---------------------------------------------------
+ * Description: DrawerLayout Test
+ * Author: ljgsonx
+ * Belong to: com.example.administrator.alldemos.activities
+ * Time: 2015/12/7 9:47
+ *---------------------------------------------------
  */
 public class Activity14 extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
