@@ -15,7 +15,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by ljgsonx on 2015/11/21.
+ *---------------------------------------------------
+ * Description: ExpandableListView Test
+ * Author: ljgsonx
+ * Belong to: com.example.administrator.alldemos.activities
+ * Time: 2015/12/7 9:51
+ *---------------------------------------------------
  */
 public class Activity11 extends ExpandableListActivity {
 

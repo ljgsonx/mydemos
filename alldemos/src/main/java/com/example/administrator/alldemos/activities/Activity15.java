@@ -17,7 +17,12 @@ import com.example.administrator.alldemos.fragments.FragmentPage5;
 import com.example.administrator.alldemos.R;
 
 /**
- * Created by ljgsonx on 2015/11/22.
+ *---------------------------------------------------
+ * Description: FragmentTabHost Test
+ * Author: ljgsonx
+ * Belong to: com.example.administrator.alldemos.activities
+ * Time: 2015/12/7 9:46
+ *---------------------------------------------------
  */
 public class Activity15 extends FragmentActivity {
 

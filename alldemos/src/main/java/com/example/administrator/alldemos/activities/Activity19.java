@@ -12,7 +12,12 @@ import com.example.administrator.alldemos.MainActivity;
 import com.example.administrator.alldemos.R;
 
 /**
- * Created by ljgsonx on 2015/12/3.
+ *---------------------------------------------------
+ * Description: 删除与添加快捷方式
+ * Author: ljgsonx
+ * Belong to: com.example.administrator.alldemos.activities
+ * Time: 2015/12/7 9:45
+ *---------------------------------------------------
  */
 public class Activity19 extends AppCompatActivity {
 
