@@ -21,10 +21,11 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".GuideActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -53,6 +54,8 @@
         <activity
             android:name=".activities.Activity21"
             android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activities.Activity22" />
+        <activity android:name=".activities.Activity23" />
 
         <provider
             android:name=".utils.UserProvider"
@@ -64,7 +67,6 @@
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
-
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/my_app_widget_provider_info" />

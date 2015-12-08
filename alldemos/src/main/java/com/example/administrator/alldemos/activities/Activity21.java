@@ -56,6 +56,7 @@ public class Activity21 extends AppCompatActivity implements LoaderManager.Loade
         setContentView(R.layout.activity_listview);
 
         //初始化LoaderManager
+        //可以先初始化,再添加adapter,因为loader在主线程不被占用时才开始加载
         mCallbacks = this;
         mLoaderManager = getLoaderManager();
         mLoaderManager.initLoader(LOADER_ID, null, mCallbacks);
